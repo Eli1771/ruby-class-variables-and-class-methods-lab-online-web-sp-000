@@ -39,5 +39,6 @@ class Song
     results = {}
     @@artists.each do |a| 
       results.keys.include?(a) ? results[a] += 1 : results[a] = 1
+    end 
   end 
 end 
