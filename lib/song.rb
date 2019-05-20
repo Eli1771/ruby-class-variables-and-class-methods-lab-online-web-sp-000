@@ -21,4 +21,11 @@ class Song
     end 
     results
   end 
+  def self.genres
+    results = [] 
+    @@genres.each do |g|
+      results << g if !@@genres.include?(g)
+    end 
+    results 
+  end 
 end 
