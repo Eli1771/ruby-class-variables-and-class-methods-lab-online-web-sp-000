@@ -36,6 +36,8 @@ class Song
     results
   end 
   def self.artist_count 
-    
+    results = {}
+    @@artists.each do |a| 
+      results.keys.include?(a) ? results[a] += 1 : results[a] = 1
   end 
 end 
